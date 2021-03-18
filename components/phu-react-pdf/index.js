@@ -6,9 +6,9 @@ import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
 const filePDF = './assets/pdfFile.pdf';
 function App() {
   return (
-    <div style={{ height: '750px' }}>
+    <div>
      <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.5.207/build/pdf.worker.min.js">
-    <div id="pdfviewer">
+    <div id="pdfviewer" style={{ height: '750px' }}>
         <Viewer fileUrl={filePDF} /> 
     </div>
     </Worker>
